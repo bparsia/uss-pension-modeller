@@ -8,6 +8,18 @@ st.set_page_config(
     layout="wide",
 )
 
+# Password gate — remove once app is public
+_password = st.secrets.get("APP_PASSWORD", "")
+if _password:
+    if not st.session_state.get("authenticated"):
+        pwd = st.text_input("Password", type="password")
+        if pwd == _password:
+            st.session_state["authenticated"] = True
+            st.rerun()
+        elif pwd:
+            st.error("Incorrect password.")
+        st.stop()
+
 from branding.branding import apply_branding
 apply_branding(page_title="USS Modeller")
 

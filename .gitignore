@@ -6,3 +6,4 @@ sources/*.xlsx
 sources/*.pdf
 sources/*.md
 data/raw/
+.streamlit/secrets.toml
