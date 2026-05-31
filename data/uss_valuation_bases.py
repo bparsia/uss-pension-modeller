@@ -105,6 +105,43 @@ def _ucu_fr(assets: float, uss_tp_liabs: float, ucu_rate: float,
     return assets / ucu_liabs
 
 
+def _hardcoded_fr_histories(years: list[int]) -> pd.DataFrame:
+    """Fallback when USS_CashFlows.xlsx is not available (e.g. Streamlit Cloud).
+
+    Values are pre-computed from the full model and hardcoded here.
+    UCU bases only available from 2017 onwards.
+    """
+    _HARDCODED = {
+        # year: (uss_tp, ucu_prudent, ucu_best_est)
+        2008: (103.0, None,  None),
+        2009: ( 74.0, None,  None),
+        2010: ( 83.0, None,  None),
+        2011: ( 92.0, None,  None),
+        2012: ( 91.0, None,  None),
+        2013: ( 90.0, None,  None),
+        2014: ( 89.0, None,  None),
+        2015: ( 89.0, None,  None),
+        2016: ( 89.0, None,  None),
+        2017: ( 89.0, 102.3, 135.6),
+        2018: ( 87.0, 109.0, 146.0),
+        2019: ( 85.0, 105.9, 141.2),
+        2020: ( 83.0, 102.9, 136.4),
+        2021: ( 87.0,  97.9, 129.3),
+        2022: (102.0, 105.0, 138.0),
+        2023: (111.0, 105.2, 137.7),
+        2024: (114.0, 106.2, 138.9),
+        2025: (116.0, 109.9, 143.8),
+    }
+    rows = []
+    for yr in years:
+        if yr in _HARDCODED:
+            tp, pr, be = _HARDCODED[yr]
+        else:
+            tp, pr, be = None, None, None
+        rows.append(dict(year=yr, uss_tp=tp, ucu_prudent=pr, ucu_best_est=be))
+    return pd.DataFrame(rows).set_index("year")
+
+
 def build_fr_histories(years: list[int]) -> pd.DataFrame:
     """Return a DataFrame with columns [year, uss_tp, ucu_prudent, ucu_best_est].
 
@@ -115,11 +152,8 @@ def build_fr_histories(years: list[int]) -> pd.DataFrame:
     ``years`` should cover 2008–2025 or whatever range is needed.
     """
     if not _CASHFLOWS.exists():
-        raise FileNotFoundError(
-            f"Cash flow data not found at {_CASHFLOWS}. "
-            "This file is not in the repo (non-shareable). "
-            "FR history will fall back to the CSV-based approach."
-        )
+        return _hardcoded_fr_histories(years)
+
 
     cf = _load_real_cashflows()
 
