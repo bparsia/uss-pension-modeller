@@ -5,7 +5,7 @@ from pathlib import Path
 st.set_page_config(
     page_title="USS Modeller",
     page_icon=str(Path(__file__).parent / "branding" / "assets" / "ucuc-6.png"),
-    layout="wide",
+    layout="centered",
 )
 
 # Password gate — remove once app is public

@@ -175,6 +175,7 @@ def simulate(
     shocks: list[tuple[float, float, float]],
     params: FundParams,
     ci_scheme: str = "proportional",
+    start_year: int = 2023,
 ) -> list[FundState]:
     """Run the fund model for a sequence of annual shocks.
 
@@ -199,7 +200,6 @@ def simulate(
     gap_history: list[float] = []
 
     states: list[FundState] = []
-    start_year = 2023
 
     for t, (eq_ret_real, gilt_yield, cpi) in enumerate(shocks):
         year = start_year + t
@@ -262,9 +262,9 @@ def simulate(
             floor = soft_cap_indexation(cpi)
             indexation = floor + ci_factor * max(0.0, target_pct - floor)
         elif ci_scheme == "hybrid":
-            # Floor = params.hybrid_floor_frac × target, always paid
-            floor = getattr(params, "hybrid_floor_frac", 0.5) * target_pct
-            indexation = floor + ci_factor * max(0.0, target_pct - floor)
+            # Floor = soft cap; CI factor on full target; take the higher
+            floor = soft_cap_indexation(cpi)
+            indexation = max(floor, ci_factor * target_pct)
         else:
             indexation = ci_factor * target_pct
 
