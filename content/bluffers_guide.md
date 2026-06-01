@@ -29,11 +29,11 @@ Book the free appointment. First one is free so you can get your feet wet safely
 
 ## A couple more caveats
 
-This is an early version of the tutorial and the models underlying it. I THINK they will be helpful for debates at Congress. But YMMV. Working through these models has been illuminating for me. I still think, for a number of reasons, we should not pass HE13: Composite (basically, halt all exploration of Conditional Indexation), but my understanding has shifted. On the one had, with the right valuation methodology, we could easily go back to full indexation (on an affordability basis). However, we might not get that methodology. The soft cap is probably suboptimal in a number of ways but I thought more CI designs were much worse. At least against the past 10 years or so, the soft cap and even a fairly hostle CI regime under a hostile valuation methodology are pretty close.
+This is an early version of the tutorial and the models underlying it. I THINK they will be helpful, but YMMV. Working through these models has been illuminating for me.  On the one hand, with the right valuation methodology, we could easily go back to full indexation (on an affordability basis). However, we might not get that methodology. The soft cap is probably suboptimal in a number of ways but I thought more CI designs were much worse. At least against the past 10 years or so, the soft cap and even a fairly hostle CI regime under a fairly prudent valuation methodology are pretty close.
 
 CI potentially allows for "automagical" benefit improvement thus insulating us from having to negotiate every benefit enhancement and put it up against contribution reduction. Every negotiation is a risk with an adversary. Since the swing vote (the "independent") chair has historically not been super awesome for us, we need to consider that risk seriously.
 
-What this tools does not (yet) explore is how CI can support changes in investment strategy to a more pro-growth position. A better valuation supports that too, but CI contributes as well.
+What this tool does not (yet) explore is how CI can support changes in investment strategy to a more pro-growth position. A better valuation supports that too, but CI contributes as well.
 
 Anyway, YMMV!
 
@@ -43,7 +43,7 @@ Anyway, YMMV!
 
 ### Inflows/Assets
 
-You (and nominally your employer, but employer contributions are pary of your compensation so it's really all you!) pay money into USS. Eventually you hope to get money out. But you don't have an individual account with USS that your money goes into. It's not a fancy ISA.
+You (and nominally your employer, but employer contributions are part of your compensation so it's really all you!) pay money into USS. Eventually you hope to get money out. But you don't have an individual account with USS that your money goes into. It's not a fancy ISA.
 
 There are two sources of cash: member contributions and returns on the pooled investment fund. The scheme is "open" which means new members (lots of them) get enrolled in the scheme and will do so for the forseeable future. If USS "closed", that is, stopped enrolling new members, then eventually all current members would retire and contributions would go to 0. Critically, we would have to pay everyone's pension out. Presumably we'd start dipping into capital at that point. A closed scheme is like an individual ISA: you pay in (make contributions) as long as you're working, but when you retire you draw on the interest and perhaps the capital if needed. If you run out...sucks to be you. If USS closed and ran out of money before all the pensioners died, employers would be the backstop.
 
@@ -51,11 +51,11 @@ But for an open scheme, the contributors (as a group) never collectively retire.
 
 ### Outflows/Liabilities
 
-USS pays out pensions. It has to pay out your lump sum and then your pension until you and your beneficiaries die. In a pure pay as you go scheme (like government pensions), the outflows come from taxation (i.e., a form of contribution). Critically, governments can borrow and they can change the law so as to change (or halt) benefits. For fund based schemes, accural (the pension you've earned an entitlement to over the years) is a *contractual promise*. Once you've accrued a benefit, USS is ordinarily required to cover it. Future accural is up in the air, always. After all, the scheme could close. In some variants that would stop all contributiosn *and* accural.
+USS pays out pensions. It has to pay out your lump sum and then your pension until you and your beneficiaries die. In a pure pay-as-you-go scheme (like government pensions), the outflows come directly from the inflows (i.e., from current taxes, a form of contribution). Critically, governments can borrow and they can change the law so as to change (or halt) benefits. For fund-based schemes, accural (the pension you've earned an entitlement to over the years) is a *contractual promise*. Once you've accrued a benefit, USS is ordinarily required to cover it. Future accural is up in the air, always. After all, the scheme could close. In some hypothetical variants that would stop all contributions *and* accural.
 
-Now, obviously, USS is not paying out to all members, so some liabilites are only in the future. If you die before retiring, your cost to the scheme drops from lump sum plus (let's say) 20 years of pension payments to just lump sum. But until a member exits USS, USS owes them something.
+Now, obviously, USS is not paying out to all members, so some promises are only about the future. If you die before retiring, your cost to the scheme drops from lump sum plus (let's say) 20 years of pension payments to just the lump sum. But until a member exits USS, USS owes them something.
 
-Of course, USS doesn't know what it owes you because what it will have paid you isn't determined until you die. If you drop dead with only 10 years accrual your benefits are small and thus so is USS's actual liability wrt to you. If you rise to a highly paid dean in your 20s, accure for 40 years and then live another 30 and are survived by your spouse for another 10...it costs a lot to fund all that. Any random individual member could be one of these extremes, though most are not. (The magic of actutorial analysis let's us make pretty good predictions at the population level.)
+Of course, USS doesn't know what it owes you because what it will have paid you isn't determined until you die. If you drop dead with only 10 years accrual, your benefits are small and thus so is USS's actual liability wrt to you. If you rise to a highly paid dean in your 20s, accure for 40 years and then live another 30 and are survived by your spouse for another 10...it costs a lot to fund all that. Any random individual member could be one of these extremes, though most are not. (The magic of actutorial analysis let's us make pretty good predictions at the population level.)
 
 Thus when deciding what promises to make, USS has to predict what those promises will cost and what their income will be. These need to balance in the long run. Indeed, in the medium run!
 
@@ -66,11 +66,11 @@ Thus when deciding what promises to make, USS has to predict what those promises
 USS 
 
 1. collects contributions, invests them, and pays pension out of the returns (mostly);
-2. has an obligation to pay out all the pensions obligations it that have accrued;
+2. has an obligation to pay out all the pensions obligations it has accrued;
 3. doesn't know exactly what those obligations are because they depend on what happens in the future;
-4. doesn't know what the future contributions and returns will be because prediction is hard, especially about the future.
+4. doesn't know what the future contributions and returns will be because prediction is hard, *especially** about the future.
 
-Thus USS must make a rationally grounded, restricted by regulation *best guess* and what its future costs and income will be and whether they balance over a give horizon.
+Thus USS must make a rationally grounded, restricted by regulation *best guess* as to what its future costs and income will be and whether they balance over a give horizon.
 
 ---
 
@@ -86,17 +86,17 @@ start_year = 2017
 pension = 1000
 caption = Figure 1. Starting pension: £1,000/month in 2017. With the "show nominal" toggle *off*, the chart is in constant pounds. Thus the *value* of your pension is the declining line. If you toggle nominal *on*, the the pension stays at £1000 (a flat lines) and the rising lines show how many pounds you'd need to maintain purchasing power.
 ```
-As we can see, your purchasing power is reduced to £766. Your pension is the same in "nominal" pounds. It was £1000 then and it's £1000 now. But the *real value* of that £1000 has fallen. It is as if you had received a pension of £766 (a loss of 23.4%).
+As we can see, your purchasing power is reduced to £766. Your pension is the same in "nominal" pounds. The deposit you get was £1000 then and it's £1000 now. But the *real value* of that £1000 has fallen. It is now as if you had received a pension of £766 (a loss of 23.4%).
 
-This (to a first approximation) does not violate any promises by USS...it promised you a £1000/month pension and you have one!
+This (to a first approximation) does not violate any promises by USS...it promised you a £1000/month pension and you have one! 
 
 This is where indexation comes in. 
 
-By law, pensions must be increased by CPI or 2.5%, whichever is less. Before 2016, USS had *full* indexation. That is, your *nominal* pension rose by the full CPI% percentage which means you *purchasing power* stayed the same. You pension supports the lifestyle to which you are accustomed to over your full lifetime.
+By law, pensions must be increased by CPI or 2.5%, whichever is less. Before 2016, USS had *full* indexation. That is, your *nominal* pension rose by the full CPI percentage which means your *purchasing power* stayed the same (if CPI is a good match for your spending). You pension supports the lifestyle to which you are accustomed to over your full lifetime.
 
 (Note: USS usually uses the CPI inflation metric. In other contexts, UCU uses the RPI metric which tends to indicate higher inflation. Which measure to use has not been a central negotiating point. I'll try to use "CPI" instead of "inflation" from here on as it's more precise.) 
 
-However, because of valuation issues (we're going to dive into) from 2010, USS ended full indexation in 2016 and replaced it with the so called *soft cap*. The soft cap matches CPI up to 5%, then matches *half* of CPI from 5%-10%. Thus the maximum indexation is 7.5% when CPI reaches 10%.
+However, because of valuation issues (which e're going to dive into) from 2010, USS ended full indexation in 2016 and replaced it with the so called *soft cap*. The soft cap matches CPI up to 5%, then matches *half* of CPI from 5%-10%. Thus the maximum indexation is 7.5% when CPI reaches 10%.
 
 Thus under current USS indexation, if CPI is less than 5%, you're good. From 5%-10%...you lose some and above 10%…you're on your own. 
 
@@ -125,13 +125,13 @@ Clearly, indexation, indeed, full indexation, should be the strong default. For 
 
 From the House of Commons [research report on pensions](https://commonslibrary.parliament.uk/research-briefings/sn00290/), "The UK has an overall net replacement rate of 54.4% from mandatory pensions for an average earner, below the OECD average of 61.4%."
 
-Of course, the triple lock keeps getting hit by complaints that it's too expensive. It, of course, is funded out of taxes and borrowing. For USS, pensions are funded out of contributions and returns. There is a huge amount of uncertainty about both.
+Furthermore, the triple lock keeps getting hit by complaints that it's too expensive. It, of course, is funded out of taxes and borrowing. For USS, pensions are funded out of contributions and returns. There is a huge amount of uncertainty about both.
 
-Thus, every 3 years USS under goes a "valuation": An exercise to determine what it believes its likely future liabilities and costs are.
+Thus, every 3 years USS undergoes a "valuation": An exercise to determine what it believes its likely future liabilities and assets will be over a long time horizon.
 
 Again, these are predictions. About the future. Indeed, about the far future. (10-50 years mostly, not millennia). But once a prediction is made, USS has to act on it.
 
-The key magic number is the "funding ratio" (FR) that is the ratio of (projected) assets to (projecte) liabilities. These are both sensitive to a number of assumptions and guided by your tolorence of risk (which is partly controlled by the pension regulator). Historically, the USS valuation methodology has been hugely *pessimistic* about the future. (This is what is meant by saying it is "excessively prudent"). Consider the old USS funding ratio estimate over time
+The key magic number is the "funding ratio" (FR), that is the ratio of (projected) assets to (projected) liabilities. These are both sensitive to a number of assumptions and guided by your tolerance of risk (which is partly controlled by the pension regulator). Historically, the USS valuation methodology has been hugely *pessimistic* about the future. (This is what is meant by saying it is "excessively prudent"). Consider the old USS funding ratio estimate over time
 
 ```chart
 type = fr_history
@@ -153,11 +153,11 @@ As you might expect, 3 is the default approach of USS. Hence the move from full 
 
 It is striking that from 2009 to 2021, the USS estimate was that they were underwater and consistently so. UCU argued that there was something deeply wrong with their methodology. This became undeniable when their valuation swung from billions in deficit to billions in surplus after a pointless benefit cut. The world did not change as much as their valuation did. That suggested something deeply wrong with their valuation methodology. It's one thing to be consistently depressed, but another to have wild swings on a relatively steady economic outlook.
 
-UCU tackled this and commissioned an alternative approach to valuation. Unlike, the Doom and Gloom USS approach, it was centered on the idea of "best estimate". Instead of being all chicken little about the future, the UCU approach aims to be as *accurate* as reasonably possible. This fundamental difference in perspectives yields fundamentally different results. Our team also developed a "prudent" version of our methodology, which basically starts from a best estimate and then adds a *bit* of gloom. Not wild doom. Just enough gloom to be sensibly prudent.
+UCU tackled this and commissioned the development of an alternative approach to valuation. Unlike, the Doom and Gloom USS approach, it was centered on the idea of "best estimate". Instead of being all chicken little about the future, the UCU approach aims to be as *accurate* as reasonably possible. This fundamental difference in perspectives yields fundamentally different results. Our team also developed a "prudent" version of our methodology, which basically starts from a best estimate and then adds a *bit* of gloom. Not wild doom. Just enough gloom to be support a bit of risk aversion.
 
 Unsurprisingly, these estimates support a >100% FR since 2017. Not that alone doesn't mean that the estimates are good. After all, maybe they are unduly optimistic!
 
-However, unlike the USS methodology, they don't show the bizarre swings from deficit to surplus (or the reverse). They still *fluctuate* so demonstrate sensitivity to current economic measures. But they aren't obviously *detached* from the economy.
+However, unlike the USS methodology, they don't (in the historical data) show the bizarre swings from deficit to surplus (or the reverse). They still *fluctuate* so demonstrate sensitivity to current economic measures. But they aren't obviously *detached* from the economy.
 
 
 ```chart
@@ -168,7 +168,7 @@ show_cpi = false
 caption = Figure 4. USS estimated funding ratio 2008–2025 on three valuation bases. The scheme has been in technical deficit on the USS TP basis for most of 2009–2022. The UCU Best Estimates valuation averages 30%-33% better than the prudent valuation.
 ```
 
-Even with the UCU prudent valuation, our methodology does not support a deficit driven crisis. The fact that our approach to valuation is does not have a massive odd swings where the USS approach does gives us some confidence that UCU's isn't just optimistic where the USS approach was pessimistic. We believe (for lots of reasons) that the USS approach was broken. It going from a massive deficit to a massive surplus with no real economic justification indicates that their approach was far too sensitive to some inputs.
+Even with the prudent version, our methodology does not support a deficit driven crisis. The fact that our approach to valuation does not have a persistent indifference to the actual economy or  massive odd swings where the USS approach does gives us some confidence that UCU's isn't just optimistic symmetrically with the pessimisms of the USS approach. We believe (for lots of reasons) that the USS approach was broken. It going from a massive deficit to a massive surplus with no real economic justification indicates that their approach was far too sensitive to some inputs.
 
 Of course, Even if the funding ratio is above 100%, CPI could be large enough and the surplus small enough that full indexation might require additional contributions (on that valuation). 
 
@@ -184,18 +184,18 @@ Consider, the cost of CPI indexation
 
 (Note that the bars are interpreted against the right axis. It's a little confusing but it gives you a feel for what CPI is in each year which drives the cost of full CPI indexation line. They should track.)
 
-The way to think about the cost line is that it is the amount of surplus *above* full funding of unindexed liabilities needed to break even with full CPI indexation. Thus, if your FR is below 100%, this indicates how much *more* blow 100% you'd be if you did full indexation. If your valuation is *above* the cost line, then you can afford indexation with no other changes. Indeed, if the valuation is well above the indexation cost line, that indicates further surplus that could be used to improve benefits or reduce costs.
+The way to think about the cost line is that it is the amount of surplus *above* full funding of unindexed liabilities needed to break even with full CPI indexation. Thus, if your FR is below 100%, this indicates how much *more* below 100% you'd be if you did full indexation. If your valuation is *above* the cost line, then you can afford indexation with no other changes. Indeed, if the valuation is well above the indexation cost line, that indicates further surplus that could be used to improve benefits or reduce costs.
 
 This chart illustrates just how overwhelming the valuation methodology is in determining what happens to our pensions. This is before we consider the effects of these predictions on investment strategy. The cost of a clearly bonkers methodology has been degradation of our pensions and massive industrial action to try to mitigate it.
 
-Fixing the valuation is job 1 and what UCU has been focused on in negotiations. And we've made a lot of progress! We'll see what happens this year, but we've gotten a basic agreement to more toward a methodology more along our lines. We'll see what happen in 2026-2027!
+Fixing the valuation is job 1 and what UCU has been focused on in negotiations for the past several years. And we've made a lot of progress! We'll see what happens this year, but we've gotten a basic agreement to move toward a methodology more along our lines. We'll see what happen in 2026-2027!
 
 ---
 
 
 ## What is conditional indexation?
 
-We've seen "match CPI" indexation and "match CPI until you don't" (soft cap) indexation. These are *unconditional* forms of indexation. They are to happen without regard to affordability.
+We've seen "match CPI" indexation and "match CPI until you don't" (soft cap) indexation. These are *unconditional* forms of indexation. They are intended to happen without regard to affordability.
 
 Of course, they are not *truly* unconditional in the sense that affordability (or *perceived* affordability) can and has triggered contribution and benefit changes. The move from full CPI to the soft cap is itself an indicator of the conditionality of any indexation. However, such changes tend to be big, slow, crude, and disruptive. Unwinding them is a big, difficult deal. We have recent experience of this with the roll out then roll back of big benefit cuts in the light of the COVID valuation. The amount of effort and expense to USS to "restore" benefits was enormous, and that is dwarfed by the lost pay and pain of the industrial action needed to get us back what *by USS's own methodology* should have never been lost.
 
@@ -203,7 +203,7 @@ What is called conditional indexation attempts to make the gross conditionality 
 
 However, one intuition is that the combination of high inflation and low returns is unlikely in a modern, reasonably run economy. Thus most CI schemes include a "catch up" mechanism. If after a sub-inflation indexation, we have a surplus over what's need to cover current inflation, we back fill the low indexation years. 
 
-If we zoom in on the affordablity chart from 2019-2025:
+If we zoom in on the affordability chart from 2019-2025:
 
 ```chart
   type = fr_affordability
@@ -213,7 +213,7 @@ If we zoom in on the affordablity chart from 2019-2025:
   show_cpi = true
   caption = Figure 6. We're focusing on a period where full CPI indexation has years of unaffordability (2021-2023) according to an OK methodology and years where, according that methodology, we have a post indexation surplus.
 ```
-From 2021-2024, the cost line is above the valuation line, thus indicating that full CPI is "not affordable".  Note that in 2022 and 2023, inflation is above the soft cap (which tops out at 7.5%CPI).
+From 2021-2024, the cost line is above the valuation line, thus indicating that full CPI is "not affordable".  Note that in 2022 and 2023, inflation is above the soft cap (which tops out at 7.5% CPI).
 
 However, in 2024 and 2025 things improve significantly. Returns are up, inflation is down, but even thought backfilling seems like it should be affordable, we would have to *change the scheme* via negotiation to get full indexation for those two years (assuming no cuts happened). With most conditional indexation years, surplus of indexation in 2023-2024 would be used to "fix" the lost of real value experienced in 2021-2022.
 
@@ -234,7 +234,7 @@ Interestingly, with many CI schemes, some effects of the horrid methodology can 
 
 Moreover, there's no reason a CI scheme need to include a 0% lower bound or an inflation measure upper bound. The CI floor could be the soft cap, which is a strict improvement over the current situation. The CI target could be RPI+2.5% which would target a gradually *improving* pension in real terms.
 
-Super inflation indexation is a simple benefit enhancement that evenly applies to  both active and retired members. It thus doesn't rectify existing disparities (e.g., new members won't have final salary and probably have less generous accural rates than at least some retired members). Accrual and contribution rates do need ongoing negotiations but stabilising the valuation makes it less likely that we need pit active members against retired members. By allowing a little slack in the system, we can share some of the burden and some of the benefits in a uniform way.
+Super-inflation indexation is a simple benefit enhancement that evenly applies to  both active and retired members. It thus doesn't rectify existing disparities (e.g., new members won't have final salary and probably have less generous accural rates than at least some retired members). Accrual and contribution rates do need ongoing negotiations but stabilising the valuation makes it less likely that we need pit active members against retired members. By allowing a little slack in the system, we can share some of the burden and some of the benefits in a uniform way.
 
 Equally, one could easily design a hostile CI scheme (e.g., include 0%, no or limited catch up). Similarly, one could misuse positive valuations to cut contributions for employers (a stealth pay cut). We should not agree to any of these, obviously!
 
@@ -242,9 +242,16 @@ Also, if like the classic USS methodology, we have a long bout of technical defi
 
 ## How would CI have performed historically?
 
-Ok, this is fine, but what would have been the actual affect on our paensions given recent inflation?
+Ok, this is fine, but what would have been the actual affect on our pensions given recent inflation?
 
-Let's consider 4 indexation schemes: two unconditional: full CPI ahd the soft cap; two conditional: one with a 0% floor and one with a soft cap floor. The 0% floor is only scheme the current USS interim report considers.
+Let's consider 4 indexation schemes: 
+1. two unconditional: 
+    * full CPI (the best!) and
+    * the soft cap (what we have), vs.
+2. two conditional: 
+    * one with a 0% floor (what the employers likely would prefer)
+    * and one with a soft cap floor (that is, the conditionality is all above the soft cap; this will track the soft cap until we go above 5% CPI in which case soft-cap+CI scheme *could* improve on the soft cap (depening on the FR)).
+    
 
 ```chart
 type = ci_replay
