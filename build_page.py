@@ -17,7 +17,7 @@ import textwrap
 from pathlib import Path
 
 SRC  = Path(__file__).parent / "content" / "bluffers_guide.md"
-DEST = Path(__file__).parent / "pages" / "0_Bluffers_Guide.py"
+DEST = Path(__file__).parent / "_pages" / "0_Bluffers_Guide.py"
 
 # ---------------------------------------------------------------------------
 # Parser

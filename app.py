@@ -24,11 +24,11 @@ from branding.branding import apply_branding
 apply_branding(page_title="USS Modeller")
 
 _pages = [
-    st.Page("pages/0_Bluffers_Guide.py", title="Bluffer's Guide"),
-    # st.Page("pages/2_Introduction.py",   title="Introduction"),
-    # st.Page("pages/3_CI_Basics.py",      title="CI Basics"),
-    # st.Page("pages/4_Projections.py",    title="Projections"),
-    # st.Page("pages/5_CI_Schemes.py",     title="CI Schemes"),
+    st.Page("_pages/0_Bluffers_Guide.py", title="Bluffer's Guide"),
+    # st.Page("_pages/2_Introduction.py",   title="Introduction"),
+    # st.Page("_pages/3_CI_Basics.py",      title="CI Basics"),
+    # st.Page("_pages/4_Projections.py",    title="Projections"),
+    # st.Page("_pages/5_CI_Schemes.py",     title="CI Schemes"),
 ]
 pg = st.navigation(_pages)
 pg.run()
